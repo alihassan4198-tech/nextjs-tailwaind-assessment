@@ -37,7 +37,7 @@ export default function Products() {
             {data &&
               data.length > 0 &&
               data.map((job) => (
-                <div className="my-1">
+                <div className="my-1" key={job.title}>
                   <Card
                     mainTitle={job.brand}
                     jobTitle={job.title}
